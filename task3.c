@@ -28,5 +28,5 @@ int main() {
     }
 
     double approx = 4 * total_sum;
-
+    printf("%.10f\n", approx);
 }
