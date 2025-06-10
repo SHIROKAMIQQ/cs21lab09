@@ -5,7 +5,8 @@ int main() {
     double partial_sum, total_sum;
     long long n = 100000000;
 
-    #pragma omp parallel private(partial_sum) shared(total_sum) {
+    #pragma omp parallel private(partial_sum) shared(total_sum) 
+    {
         partial_sum = 0;
         total_sum = 0;
 
@@ -20,7 +21,8 @@ int main() {
             partial_sum += term;
         }
 
-        #pragma omp critical {
+        #pragma omp critical 
+        {
             total_sum += partial_sum;
         }
     }
