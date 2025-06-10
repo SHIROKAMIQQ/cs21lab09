@@ -16,7 +16,7 @@ int main() {
                 numerator *= -1;
             }
             double denominator = 2*i + 1;
-            double term = numerator / deonominator;
+            double term = numerator / denominator;
             partial_sum += term;
         }
 
