@@ -16,7 +16,8 @@ int main() {
                 numerator *= -1;
             }
             double denominator = 2*i + 1;
-            double term = numerator / denominator;
+            double term = numerator / deonominator;
+            partial_sum += term;
         }
 
         #pragma omp critical {
@@ -25,5 +26,5 @@ int main() {
     }
 
     double approx = 4 * total_sum;
-    printf("%.10f\n", approx);
+
 }
