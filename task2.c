@@ -16,6 +16,6 @@ int main(){
     }
 
     double approx = partial_sums[0] + partial_sums[1] + partial_sums[2] + partial_sums[3];
-    approx *= 4
+    approx *= 4;
     printf("%.10lf\n", approx);
 }
