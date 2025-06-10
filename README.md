@@ -15,7 +15,7 @@ gcc -O2 -mavx2 task4.c -o task4 -fopenmp
 
 # Running via shell script
 
-I made use of the shell-provided `time` instruction in order to get execution time for running a task. I then made a shell script `execution_time.sh` which runs a task 10 times, and then gets the average run time of the runs. For example, for running task 1:
+I made use of the shell-provided `time` instruction in order to get execution time for running a task. I then made a shell script `execution_time.sh` which runs a task 10 times, and then gets the average run time of the runs. For example, for running `<Compiled Task>`:
 ```
-./execution_time.sh ./task1
+./execution_time.sh ./<CompiledTask>
 ```
